@@ -1,0 +1,266 @@
+[
+  {
+    "store": "Lotte Mart",
+    "name": "SCOURER STAINLES 4 PCS",
+    "brand": "3M",
+    "qty": "pcs",
+    "price": 16600,
+    "image": "3m.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Bayclin",
+    "brand": "BAYCLIN REGULER 4L",
+    "qty": "pcs",
+    "price": 77500,
+    "image": "bayclin.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Choice",
+    "brand": "TISU CHOICE L(B) SFT PACK 4X200'S",
+    "qty": "pcs",
+    "price": 47800,
+    "image": "choice.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Kleaner",
+    "brand": "PEL KATUN SUMBU KLIP 16CM",
+    "qty": "pcs",
+    "price": 102500,
+    "image": "kleaner.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Klinpak",
+    "brand": "KANTONG SAMPAH 60X80CM 12 PCS",
+    "qty": "pcs",
+    "price": 55000,
+    "image": "klinpak kantong.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Klinpak",
+    "brand": "KANTONG SAMPAH 100X120CM 5 PCS",
+    "qty": "pcs",
+    "price": 55000,
+    "image": "klinpak.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Mama Lemon",
+    "brand": "JERUK NIPIS POUCH 690gr/650gr",
+    "qty": "pcs",
+    "price": 8800,
+    "image": "mamalemon.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Mama Lime",
+    "brand": "DETERJEN CUCI PIRING 690gr/650gr",
+    "qty": "pcs",
+    "price": 8800,
+    "image": "mamalime.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Only Lotte",
+    "brand": "SERBET STRIPE 55X55 3P",
+    "qty": "pcs",
+    "price": 12400,
+    "image": "perstex.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Save",
+    "brand": "EMBER ABU-ABU 6GLN",
+    "qty": "pcs",
+    "price": 18300,
+    "image": "serbet.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "SOS",
+    "brand": "KARBOL CLASSIC PINE JRG 4/3.6L",
+    "qty": "pcs",
+    "price": 46500,
+    "image": "sos karbol.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "SOS",
+    "brand": "PEMBERSIH LANTAI APPLE JERIGEN 5L",
+    "qty": "pcs",
+    "price": 53500,
+    "image": "sos pembersi.jpg.jpeg"
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Taco",
+    "brand": "CUTTER SMALL CT78N 12PC",
+    "qty": "pcs",
+    "price": 17700
+  },
+  {
+    "store": "Lotte Mart",
+    "name": "Yuri",
+    "brand": "PORSTEX BOTOL 2000ML",
+    "qty": "pcs",
+    "price": 45500
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "Mama Lemon",
+    "brand": "CUCI PIRING",
+    "qty": "pcs",
+    "price": 26000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "TISU KERING",
+    "brand": "JOLLY",
+    "qty": "pcs",
+    "price": 13000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "JOLLY",
+    "brand": "TISU GULUNG",
+    "qty": "bal",
+    "price": 51000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "PLASTIK SAMPAH UKURAN JUMBO",
+    "brand": "Lucsa",
+    "qty": "pcs",
+    "price": 32000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "PLASTIK SAMPAH UKURAN SEDANG",
+    "brand": "Lucsa",
+    "qty": "pcs",
+    "price": 26000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "PLASTIK SAMPAH UKURAN KECIL",
+    "brand": "Lucsa",
+    "qty": "pcs",
+    "price": 25000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "GULA SACHET",
+    "brand": "White Sugar Stick",
+    "qty": "bal",
+    "price": 30000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "BONTOT MAKAN",
+    "brand": "Cup",
+    "qty": "pcs",
+    "price": 55000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "CUTTER",
+    "brand": "Pisau",
+    "qty": "pcs",
+    "price": 12000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "MANGKOK NASI UKURAN SEDANG",
+    "brand": "Generik",
+    "qty": "pcs",
+    "price": 5500
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "SARINGAN KELAPA UKURAN SEDANG",
+    "brand": "Food Safe",
+    "qty": "pcs",
+    "price": 21000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "REBUSAN TEH BERTANGKAI",
+    "brand": "Rebusan",
+    "qty": "pcs",
+    "price": 45000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "PENGGORENGAN",
+    "brand": "TEPLON",
+    "qty": "pcs",
+    "price": 66000
+  },
+  {
+    "store": "Toko Dali Munte",
+    "name": "CANGKIR PLASTIK",
+    "brand": "CUP",
+    "qty": "pcs",
+    "price": 15000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Mie Instan",
+    "brand": "Indomie",
+    "qty": "dus",
+    "price": 130000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Mie Putih",
+    "brand": "Bihun Jagung",
+    "qty": "bal",
+    "price": 35000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Kecap ABC Refil",
+    "brand": "ABC",
+    "qty": "Lusin",
+    "price": 222000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Kecap Asin Angsa",
+    "brand": "Angsa",
+    "qty": "Lusin",
+    "price": 185000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Garam Bintang",
+    "brand": "Bintang",
+    "qty": "pax",
+    "price": 130000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Gula ",
+    "brand": "curah",
+    "qty": "kg",
+    "price": 17500
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Minyak",
+    "brand": "Minyak",
+    "qty": "ltr",
+    "price": 17000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Ikan kaleng",
+    "brand": "Sarden",
+    "qty": "lusin",
+    "price": 500000
+  }
+]

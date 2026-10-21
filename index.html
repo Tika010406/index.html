@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pencarian Barang Multi-Toko</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        background-color: #f4f6f9;
+      }
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .filter-group {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+      select,
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      select {
+        width: 35%;
+        cursor: pointer;
+      }
+      input {
+        width: 65%;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        vertical-align: middle;
+      }
+      th {
+        background-color: #1f4e78;
+        color: white;
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+      }
+      .lotte {
+        background-color: #e63946;
+      }
+      .dali {
+        background-color: #2a9d8f;
+      }
+      .bahagia {
+        background-color: #e76f51;
+      }
+      .brand-text {
+        font-weight: bold;
+        color: #333;
+      }
+      /* Styling untuk Gambar Produk */
+      .product-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 1px solid #eee;
+        display: block;
+        margin: auto;
+      }
+      .no-img {
+        font-size: 11px;
+        color: #999;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>🔍 Cari Data Barang</h2>
+
+      <div class="filter-group">
+        <select id="storeFilter" onchange="filterData()">
+          <option value="ALL">Semua Toko</option>
+          <option value="Lotte Mart">Lotte Mart</option>
+          <option value="Toko Dali Munte">Toko Dali Munte</option>
+          <option value="Toko Bahagia">Toko Bahagia</option>
+        </select>
+        <input
+          type="text"
+          id="searchInput"
+          onkeyup="filterData()"
+          placeholder="Ketik nama barang atau merek..."
+        />
+      </div>
+
+      <table id="itemTable">
+        <thead>
+          <tr>
+            <th style="width: 80px; text-align: center">Gambar</th>
+            <th>Toko</th>
+            <th>Merek</th>
+            <th>Nama Barang</th>
+            <th>Qty / Satuan</th>
+            <th>Harga Jual</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Data dimasukkan via JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      const items = [
+        // --- DATA LOTTE MART ---
+        {
+          store: "Lotte Mart",
+          name: "SCOURER STAINLES 4 PCS",
+          brand: "3M",
+          qty: "pcs",
+          price: 16600,
+          image: "3m.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "BAYCLIN REGULER 4L",
+          brand: "Bayclin",
+          qty: "pcs",
+          price: 77500,
+          image: "bayclin.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "TISU CHOICE L(B) SFT PACK 4X200'S",
+          brand: "Choice",
+          qty: "pcs",
+          price: 47800,
+          image: "choice.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "PEL KATUN SUMBU KLIP 16CM",
+          brand: "Kleaner",
+          qty: "pcs",
+          price: 102500,
+          image: "kleaner.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "KANTONG SAMPAH 60X80CM 12 PCS",
+          brand: "Klinpak",
+          qty: "pcs",
+          price: 55000,
+          image: "klinpak kantong.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "KANTONG SAMPAH 100X120CM 5 PCS",
+          brand: "Klinpak",
+          qty: "pcs",
+          price: 55000,
+          image: "klinpak.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "JERUK NIPIS POUCH 690gr/650gr",
+          brand: "Mama Lemon",
+          qty: "pcs",
+          price: 8800,
+          image: "mama lemon.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "DETERJEN CUCI PIRING 690gr/650gr",
+          brand: "Mama Lime",
+          qty: "pcs",
+          price: 8800,
+          image: "mama lime.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "SERBET STRIPE 55X55 3P",
+          brand: "Only Lotte",
+          qty: "pcs",
+          price: 12400,
+          image: "serbet.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "EMBER ABU-ABU 6GLN",
+          brand: "Save",
+          qty: "pcs",
+          price: 18300,
+          image: "ember.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "KARBOL CLASSIC PINE JRG 4/3.6L",
+          brand: "SOS",
+          qty: "pcs",
+          price: 46500,
+          image: "sos karbol.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "PEMBERSIH LANTAI APPLE JERIGEN 5L",
+          brand: "SOS",
+          qty: "pcs",
+          price: 53500,
+          image: "sos pembersi.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "CUTTER SMALL CT78N",
+          brand: "Taco",
+          qty: "pcs",
+          price: 17700,
+          image: "cutter.jpg.jpeg",
+        },
+        {
+          store: "Lotte Mart",
+          name: "PORSTEX BOTOL 2000ML",
+          brand: "Yuri",
+          qty: "pcs",
+          price: 45500,
+          image: "perstex.jpg.jpeg",
+        },
+
+        // --- DATA TOKO DALI MUNTE ---
+        {
+          store: "Toko Dali Munte",
+          name: "CUCI PIRING",
+          brand: "Mama Lemon",
+          qty: "pcs",
+          price: 26000,
+          image: "lemon.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "TISU KERING",
+          brand: "JOLLY",
+          qty: "pcs",
+          price: 13000,
+          image: "tisu kering.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "TISU GULUNG",
+          brand: "JOLLY",
+          qty: "bal",
+          price: 51000,
+          image: "tisu gulung.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "PLASTIK SAMPAH UKURAN JUMBO",
+          brand: "Lucsa",
+          qty: "pcs",
+          price: 32000,
+          image: "plastik sampah jumbo.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "PLASTIK SAMPAH UKURAN SEDANG",
+          brand: "Lucsa",
+          qty: "pcs",
+          price: 26000,
+          image: "plastik smph sdg.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "PLASTIK SAMPAH UKURAN KECIL",
+          brand: "Lucsa",
+          qty: "pcs",
+          price: 25000,
+          image: "plastik smph kecil.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "GULA SACHET",
+          brand: "White Sugar Stick",
+          qty: "bal",
+          price: 30000,
+          image: "gula sachet.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "BONTOT MAKAN",
+          brand: "Cup",
+          qty: "pcs",
+          price: 55000,
+          image: "bontot makan.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "CUTTER",
+          brand: "Pisau",
+          qty: "pcs",
+          price: 12000,
+          image: "pisau cutter.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "MANGKOK NASI UKURAN SEDANG",
+          brand: "mangkok",
+          qty: "pcs",
+          price: 5500,
+          image: "mangkok.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "SARINGAN KELAPA UKURAN SEDANG",
+          brand: "Food Safe",
+          qty: "pcs",
+          price: 21000,
+          image: "saringan.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "REBUSAN TEH BERTANGKAI",
+          brand: "Rebusan",
+          qty: "pcs",
+          price: 45000,
+          image: "rebusan teh.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "PENGGORENGAN",
+          brand: "TEPLON",
+          qty: "pcs",
+          price: 66000,
+          image: "teplon.jpeg",
+        },
+        {
+          store: "Toko Dali Munte",
+          name: "CANGKIR PLASTIK",
+          brand: "CUP",
+          qty: "pcs",
+          price: 15000,
+          image: "cup.jpeg",
+        },
+
+        // --- DATA TOKO BAHAGIA ---
+        {
+          store: "Toko Bahagia",
+          name: "Mie Instan",
+          brand: "Indomie",
+          qty: "dus",
+          price: 130000,
+          image: "indomie.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Mie Putih",
+          brand: "Bihun Jagung",
+          qty: "bal",
+          price: 35000,
+          image: "bihun jagung.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Kecap ABC Refil",
+          brand: "ABC",
+          qty: "Lusin",
+          price: 222000,
+          image: "ABC.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Kecap Asin Angsa",
+          brand: "Angsa",
+          qty: "Lusin",
+          price: 185000,
+          image: "angsa.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Garam Bintang",
+          brand: "Bintang",
+          qty: "pax",
+          price: 14250,
+          image: "bintang.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Gula ",
+          brand: "curah",
+          qty: "kg",
+          price: 17500,
+          image: "gula.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Minyak",
+          brand: "Minyak",
+          qty: "ltr",
+          price: 17000,
+          image: "minyak.jpeg",
+        },
+        {
+          store: "Toko Bahagia",
+          name: "Ikan kaleng",
+          brand: "Sarden",
+          qty: "lusin",
+          price: 500000,
+          image: "sarden.jpeg",
+        },
+      ];
+
+      function formatRupiah(number) {
+        return new Intl.NumberFormat("id-ID", {
+          style: "currency",
+          currency: "IDR",
+          maximumFractionDigits: 0,
+        }).format(number);
+      }
+
+      function renderTable(data) {
+        const tbody = document.getElementById("tableBody");
+        tbody.innerHTML = "";
+
+        if (data.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:#888;">Data tidak ditemukan</td></tr>`;
+          return;
+        }
+
+        data.forEach((item) => {
+          let badgeClass = "dali";
+          if (item.store === "Lotte Mart") badgeClass = "lotte";
+          if (item.store === "Toko Bahagia") badgeClass = "bahagia";
+
+          const imgCell = item.image
+            ? `<img src="${item.image}" alt="${item.name}" class="product-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/60?text=No+Img';">`
+            : `<span class="no-img">Tidak ada gambar</span>`;
+
+          const row = `
+        <tr>
+          <td style="text-align:center;">${imgCell}</td>
+          <td><span class="badge ${badgeClass}">${item.store}</span></td>
+          <td class="brand-text">${item.brand}</td>
+          <td>${item.name}</td>
+          <td>${item.qty || "-"}</td>
+          <td>${formatRupiah(item.price)}</td>
+        </tr>
+      `;
+          tbody.innerHTML += row;
+        });
+      }
+
+      function filterData() {
+        const storeValue = document.getElementById("storeFilter").value;
+        const searchValue = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+
+        const filtered = items.filter((item) => {
+          const matchStore = storeValue === "ALL" || item.store === storeValue;
+          const matchName = item.name.toLowerCase().includes(searchValue);
+          const matchBrand = item.brand.toLowerCase().includes(searchValue);
+          return matchStore && (matchName || matchBrand);
+        });
+
+        renderTable(filtered);
+      }
+
+      renderTable(items);
+    </script>
+  </body>
+</html>
