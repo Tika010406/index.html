@@ -262,6 +262,7 @@
     "brand": "Sarden",
     "qty": "lusin",
     "price": 500000
+    "image": "sarden.jpeg"
   },
   {
     "store": "Toko Bahagia",
@@ -277,7 +278,7 @@
     "brand": "Jolly",
     "qty": "bal",
     "price": 1300000,
-    "image": "tisu gulung.jpeg.jpeg"
+    "image": "tisu gulung.jpeg"
   },
   {
     "store": "Toko Bahagia",
