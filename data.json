@@ -69,7 +69,7 @@
     "brand": "SERBET STRIPE 55X55 3P",
     "qty": "pcs",
     "price": 12400,
-    "image": "perstex.jpg.jpeg"
+    "image": "serbet.jpg.jpeg"
   },
   {
     "store": "Lotte Mart",
@@ -77,7 +77,7 @@
     "brand": "EMBER ABU-ABU 6GLN",
     "qty": "pcs",
     "price": 18300,
-    "image": "serbet.jpg.jpeg"
+    "image": "ember.jpg.jpeg"
   },
   {
     "store": "Lotte Mart",
@@ -100,170 +100,192 @@
     "name": "Taco",
     "brand": "CUTTER SMALL CT78N 12PC",
     "qty": "pcs",
-    "price": 17700
+    "price": 17700,
+    "image": "cutter.jpg.jpeg"
   },
   {
     "store": "Lotte Mart",
     "name": "Yuri",
     "brand": "PORSTEX BOTOL 2000ML",
     "qty": "pcs",
-    "price": 45500
+    "price": 45500,
+    "image": "perstex.jpg.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "Mama Lemon",
     "brand": "CUCI PIRING",
     "qty": "pcs",
-    "price": 26000
+    "price": 26000,
+    "image": "lemon.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "TISU KERING",
     "brand": "JOLLY",
     "qty": "pcs",
-    "price": 13000
+    "price": 13000,
+    "image": "tisu kering.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "JOLLY",
     "brand": "TISU GULUNG",
     "qty": "bal",
-    "price": 51000
+    "price": 51000,
+    "image": "tisu gulung.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "PLASTIK SAMPAH UKURAN JUMBO",
     "brand": "Lucsa",
     "qty": "pcs",
-    "price": 32000
+    "price": 32000,
+    "image": "plastik sampah jumbo.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "PLASTIK SAMPAH UKURAN SEDANG",
     "brand": "Lucsa",
     "qty": "pcs",
-    "price": 26000
+    "price": 26000,
+    "image": "plastik smph sdg.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "PLASTIK SAMPAH UKURAN KECIL",
     "brand": "Lucsa",
     "qty": "pcs",
-    "price": 25000
+    "price": 25000,
+    "image": "plastik smph kecil.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "GULA SACHET",
     "brand": "White Sugar Stick",
     "qty": "bal",
-    "price": 30000
+    "price": 30000,
+    "image": "gula sachet.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "BONTOT MAKAN",
     "brand": "Cup",
     "qty": "pcs",
-    "price": 55000
+    "price": 55000,
+    "image": "bontot makan.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "CUTTER",
     "brand": "Pisau",
     "qty": "pcs",
-    "price": 12000
+    "price": 12000,
+    "image": "pisau cutter.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "MANGKOK NASI UKURAN SEDANG",
     "brand": "Generik",
     "qty": "pcs",
-    "price": 5500
+    "price": 5500,
+    "image": "mangkok.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "SARINGAN KELAPA UKURAN SEDANG",
     "brand": "Food Safe",
     "qty": "pcs",
-    "price": 21000
+    "price": 21000,
+    "image": "saringan.jpeg.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "REBUSAN TEH BERTANGKAI",
     "brand": "Rebusan",
     "qty": "pcs",
-    "price": 45000
-    "image": "Rebusan teh.jpeg.jpeg "
+    "price": 45000,
+    "image": "the.jpeg.jpeg Rebusan"
   },
   {
     "store": "Toko Dali Munte",
     "name": "PENGGORENGAN",
     "brand": "TEPLON",
     "qty": "pcs",
-    "price": 66000
+    "price": 66000,
+    "image": "teplon.jpeg.jpeg"
   },
   {
     "store": "Toko Dali Munte",
     "name": "CANGKIR PLASTIK",
     "brand": "CUP",
     "qty": "pcs",
-    "price": 15000
+    "price": 15000,
+    "image": "cup.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Mie Telur",
     "brand": "Cap 3 Ayam",
     "qty": "dus",
-    "price": 90000
+    "price": 90000,
+    "image": "3ayam.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Mie Putih",
     "brand": "Mhun",
     "qty": "bal",
-    "price": 35000
+    "price": 35000,
+    "image": "bihun jagung.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Kecap ABC Refil",
     "brand": "ABC",
     "qty": "Lusin",
-    "price": 222000
+    "price": 222000,
+    "image": "ABC.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Kecap Asin Angsa",
     "brand": "Angsa",
     "qty": "Lusin",
-    "price": 185000
+    "price": 185000,
+    "image": "angsa.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Garam Bintang",
     "brand": "Bintang",
     "qty": "pax",
-    "price": 130000
+    "price": 130000,
+    "image": "bintang.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Gula ",
     "brand": "curah",
     "qty": "kg",
-    "price": 17500
+    "price": 17500,
+    "image": "gula.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Minyak",
     "brand": "Minyak",
     "qty": "ltr",
-    "price": 17000
+    "price": 17000,
+    "image": "minyak.jpeg"
   },
   {
     "store": "Toko Bahagia",
     "name": "Ikan kaleng",
     "brand": "Sarden",
     "qty": "lusin",
-    "price": 500000
-    "image": "sarden.jpeg.jpeg"
+    "price": 500000,
+    "image": "sarden.jpeg"
   },
   {
     "store": "Toko Bahagia",
