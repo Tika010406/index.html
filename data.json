@@ -217,7 +217,7 @@
   {
     "store": "Toko Bahagia",
     "name": "Mie Putih",
-    "brand": "Mihun",
+    "brand": "Bihun Jagung",
     "qty": "bal",
     "price": 35000
   },
@@ -262,5 +262,29 @@
     "brand": "Sarden",
     "qty": "lusin",
     "price": 500000
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Emping",
+    "brand": "Emping",
+    "qty": "Kg",
+    "price": 1050000,
+    "image": "emping.jpeg"
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Toilet Paper",
+    "brand": "Jolly",
+    "qty": "bal",
+    "price": 1300000,
+    "image": "tisu gulung.jpeg.jpeg"
+  },
+  {
+    "store": "Toko Bahagia",
+    "name": "Tisu Makan",
+    "brand": "Tisu",
+    "qty": "bal",
+    "price": 13000,
+    "image": "tisu makan.jpeg"
   }
 ]
